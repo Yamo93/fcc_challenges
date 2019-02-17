@@ -6,7 +6,8 @@ In other words, it restructures a function so it takes one argument, then return
 
 Here's an example:
 
-<code>//Un-curried function
+```javascript
+//Un-curried function
 function unCurried(x, y) {
   return x + y;
 }
@@ -17,7 +18,8 @@ function curried(x) {
     return x + y;
   }
 }
-curried(1)(2) // Returns 3</code>
+curried(1)(2) // Returns 3
+```
 
 This is useful in your program if you can't supply all the arguments to a function at one time. You can save each function call into a variable, which will hold the returned function reference that takes the next argument when it's available. Here's an example using the `curried` function in the example above:
 
