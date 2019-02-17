@@ -4,11 +4,12 @@ The `some` method works with arrays to check if any element passes a particular 
 
 For example, the following code would check if any element in the numbers `array` is less than 10:
 
-<code>var numbers = [10, 50, 8, 220, 110, 11];
+```var numbers = [10, 50, 8, 220, 110, 11];
 numbers.some(function(currentValue) {
   return currentValue < 10;
 });
-// Returns true</code>
+// Returns true
+```
 
 ***
 

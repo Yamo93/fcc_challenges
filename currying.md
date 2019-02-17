@@ -21,20 +21,22 @@ curried(1)(2) // Returns 3</code>
 
 This is useful in your program if you can't supply all the arguments to a function at one time. You can save each function call into a variable, which will hold the returned function reference that takes the next argument when it's available. Here's an example using the `curried` function in the example above:
 
-<code>// Call a curried function in parts:
+```// Call a curried function in parts:
 var funcForY = curried(1);
-console.log(funcForY(2)); // Prints 3</code>
+console.log(funcForY(2)); // Prints 3
+```
 
 Similarly, `partial application` can be described as applying a few arguments to a function at a time and returning another function that is applied to more arguments.
 
 Here's an example:
 
-<code>//Impartial function
+```//Impartial function
 function impartial(x, y, z) {
   return x + y + z;
 }
 var partialFn = impartial.bind(this, 1, 2);
-partialFn(10); // Returns 13</code>
+partialFn(10); // Returns 13
+```
 
 ***
 

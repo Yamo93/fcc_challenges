@@ -4,11 +4,12 @@ The `every` method works with arrays to check if every element passes a particul
 
 For example, the following code would check if every element in the numbers array is less than 10:
 
-<code>var numbers = [1, 5, 8, 0, 10, 11];
+```var numbers = [1, 5, 8, 0, 10, 11];
 numbers.every(function(currentValue) {
   return currentValue < 10;
 });
-// Returns false</code>
+// Returns false
+```
 
 ***
 
